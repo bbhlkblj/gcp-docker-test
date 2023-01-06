@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  backend:
+    build: ./server
+    ports:
+      - 3000:3000
+  database:
+    build: ./database
+    ports:
+      - 6603:3306
